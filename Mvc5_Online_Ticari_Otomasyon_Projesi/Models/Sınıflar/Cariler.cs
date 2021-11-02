@@ -14,5 +14,6 @@ namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Models.Sınıflar
         public string CariSoyad { get; set; }
         public string CariSehir { get; set; }
         public string CariMail { get; set; }
+        public SatisHareket SatisHareket { get; set; }
     }
 }

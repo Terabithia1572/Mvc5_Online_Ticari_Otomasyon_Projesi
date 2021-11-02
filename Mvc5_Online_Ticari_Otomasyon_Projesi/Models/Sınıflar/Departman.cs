@@ -11,5 +11,8 @@ namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Models.Sınıflar
         [Key]
         public int DepartmanID { get; set; }
         public string DepartmanAd { get; set; }
+        // bir personelin birden fazla departmanı olabilir 
+        //o yüzden biz ICollection<Personel> dedik
+        public ICollection<Personel> Personels { get; set; }
     }
 }

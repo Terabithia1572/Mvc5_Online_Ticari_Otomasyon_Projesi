@@ -18,5 +18,7 @@ namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Models.Sınıflar
         public bool Durum { get; set; }
         public string UrunGorsel { get; set; }
         public Kategori Kategori { get; set; }
+
+        public SatisHareket SatisHareket { get; set; }
     }
 }
