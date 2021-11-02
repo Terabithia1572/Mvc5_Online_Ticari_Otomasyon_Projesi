@@ -6,11 +6,13 @@ using System.Web;
 
 namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Models.Sınıflar
 {
-    public class Kategori
+    public class Admin
     {
         [Key]
-        public int KategoriID { get; set; }
-        public string KategoriAd { get; set; }
-        public ICollection<Urun> Uruns { get; set; }
+        public int AdminID { get; set; }
+        public string KullaniciAd { get; set; }
+        public string Sifre { get; set; }
+        public string Yetki { get; set; }
+
     }
 }

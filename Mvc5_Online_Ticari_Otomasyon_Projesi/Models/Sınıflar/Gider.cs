@@ -6,11 +6,12 @@ using System.Web;
 
 namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Models.Sınıflar
 {
-    public class Kategori
+    public class Gider
     {
         [Key]
-        public int KategoriID { get; set; }
-        public string KategoriAd { get; set; }
-        public ICollection<Urun> Uruns { get; set; }
+        public int GiderID { get; set; }
+        public string Aciklama { get; set; }
+        public DateTime Tarih { get; set; }
+        public decimal Tutar { get; set; }
     }
 }
