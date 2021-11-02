@@ -26,6 +26,6 @@ namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Models.Sınıflar
         public string UrunGorsel { get; set; }
         public Kategori Kategori { get; set; }
 
-        public SatisHareket SatisHareket { get; set; }
+        public ICollection<SatisHareket> SatisHarekets { get; set; }
     }
 }
