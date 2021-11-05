@@ -16,5 +16,18 @@ namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Controllers
             var degerler = c.Kategoris.ToList();
             return View(degerler);
         }
+
+        [HttpGet]
+        public ActionResult KategoriEkle()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult KategoriEkle(Kategori kategori)
+        {
+            c.Kategoris.Add(kategori);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
