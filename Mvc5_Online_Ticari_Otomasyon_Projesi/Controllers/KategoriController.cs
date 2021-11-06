@@ -29,5 +29,12 @@ namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult KategoriSil(int id)
+        {
+            var kategorisil= c.Kategoris.Find(id);
+            c.Kategoris.Remove(kategorisil);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
