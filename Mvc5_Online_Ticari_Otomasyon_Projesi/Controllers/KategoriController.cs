@@ -42,5 +42,12 @@ namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Controllers
             var kategori = c.Kategoris.Find(id);
             return View("KategoriGetir", kategori);
         }
+        public ActionResult KategoriGuncelle(Kategori k)
+        {
+            var ktgr = c.Kategoris.Find(k.KategoriID);
+            ktgr.KategoriAd = k.KategoriAd;
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
