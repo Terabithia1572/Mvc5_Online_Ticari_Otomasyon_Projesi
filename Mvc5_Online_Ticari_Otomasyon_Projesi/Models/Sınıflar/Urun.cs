@@ -24,7 +24,8 @@ namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Models.Sınıflar
         [Column(TypeName = "varchar")]
         [StringLength(500)]
         public string UrunGorsel { get; set; }
-        public Kategori Kategori { get; set; }
+        public int KategoriID { get; set; }
+        public virtual Kategori Kategori { get; set; }
 
         public ICollection<SatisHareket> SatisHarekets { get; set; }
     }
