@@ -16,6 +16,7 @@ namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Models.Sınıflar
         public string DepartmanAd { get; set; }
         // bir personelin birden fazla departmanı olabilir 
         //o yüzden biz ICollection<Personel> dedik
+        public bool Durum { get; set; }
         public ICollection<Personel> Personels { get; set; }
     }
 }
