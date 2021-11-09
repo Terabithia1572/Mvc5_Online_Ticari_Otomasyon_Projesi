@@ -61,5 +61,10 @@ namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Controllers
             return View(degerler);
             
         }
+
+        public ActionResult DepartmanPersonelSatis(int id)
+        {
+            return View();
+        }
     }
 }

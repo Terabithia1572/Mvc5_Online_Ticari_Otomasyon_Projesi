@@ -21,9 +21,13 @@ namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Models.Sınıflar
         public decimal Fiyat { get; set; }
         public decimal ToplamTutar { get; set; }
 
-        public Urun Urun { get; set; }
-        public Cariler Cariler { get; set; }
-        public Personel Personel { get; set; }
+        public int UrunID { get; set; }
+        public int CariID { get; set; }
+        public int PersonelID { get; set; }
+
+        public virtual Urun Urun { get; set; }
+        public virtual Cariler Cariler { get; set; }
+        public virtual Personel Personel { get; set; }
 
     }
 }
