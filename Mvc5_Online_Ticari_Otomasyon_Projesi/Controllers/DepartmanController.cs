@@ -64,7 +64,11 @@ namespace Mvc5_Online_Ticari_Otomasyon_Projesi.Controllers
 
         public ActionResult DepartmanPersonelSatis(int id)
         {
-            return View();
+            var degerler = c.SatisHarekets.Where(x => x.PersonelID == id).ToList();
+            var per = c.Personels.Where(x => x.PersonelID == id).Select(y => y.PersonelAd +" "+ y.PersonelSoyad)
+                .FirstOrDefault();
+            ViewBag.dpers = per;
+            return View(degerler);
         }
     }
 }
